@@ -1,0 +1,36 @@
+<div class="container">
+			
+	<div class="city-picker col-lg-4">
+		
+	    <h1>Hi!</h1>
+		<p>To start with METEOR enter a name of a location you want to check</p>
+
+		<div class="input-group">
+			<input 
+		    	type="text" 
+		    	id="city"
+		    	ng-model="city" 
+		    	placeholder="Type a city name" 
+		    	typeahead="address for address in getLocation($viewValue)" 
+		    	typeahead-loading="loadingLocations" 
+		    	typeahead-template-url="views/typeahead.html"
+		    	typeahead-on-select="showWeather($item)"
+		    	class="form-control" />
+			<span class="input-group-btn">
+				<button class="btn btn-primary" type="button" ng-click="showWeather(city)">Show me what's outside!</button>
+			</span>
+		</div>
+
+		<div class="history" ng-if="storedLocations.length">
+			<p>Here's few locations you've selectd prevouosly:</p>
+			<ul>
+				<li ng-repeat="location in storedLocations track by $index">
+					<a href="#" ng-click="showWeather(location)">{{location}}</a>
+				</li>
+			</ul>
+		</div>
+	    
+	</div>
+
+
+</div>

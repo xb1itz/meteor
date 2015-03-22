@@ -1,0 +1,32 @@
+<div class="container">
+			
+	<div class="header">
+		<div class="location">
+			<a ui-sref="location"><span>{{city}}</span><span>Change location</span></a>
+		</div>
+		<div class="time">Observation time: {{condition.observation_time}}</div>
+	</div>
+
+	<div class="weather current" ng-if="condition">
+		
+		<i class="icon" ng-if="condition" weather-icon />
+
+		<div class="condition">
+			<label>temperature</label>
+			<span class="temp">{{condition.temp_C}}</span>
+			<span class="realfeel">{{condition.FeelsLikeC}}</span>
+		</div>
+
+		<div class="status">{{condition.weatherDesc[0].value}}</div>
+
+		<ul class="hourly">
+			<li ng-repeat="condition in hourlyWeather | forecast | limitTo: 4">
+				<span class="time">{{condition.time / 100}} H </span>
+				<i class="icon" weather-icon/>
+				<span class="temp">{{condition.tempC}}</span>
+			</li>
+		</ul>
+
+	</div>
+
+</div>

@@ -1,0 +1,485 @@
+body,
+html {
+  height: 100%;
+}
+main {
+  display: table;
+  height: 100%;
+  min-height: 100%;
+  width: 100%;
+}
+main * {
+  font-family: 'PT Sans', sans-serif;
+}
+main .container {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+}
+main .header {
+  color: #3598dc;
+  top: 0;
+  position: fixed;
+  height: 2em;
+  width: 100%;
+  margin: 0 -15px;
+  padding: 3em;
+}
+main .header .location {
+  float: left;
+  font-size: 15px;
+  opacity: 0.8;
+  width: 50%;
+}
+main .header .location a:hover {
+  text-decoration: none;
+}
+main .header .location a span {
+  display: block;
+  text-align: left;
+}
+main .header .location a span:last-child {
+  color: #333333;
+  font-size: 0.9em;
+}
+main .header .time {
+  float: right;
+  font-size: 15px;
+  opacity: 0.8;
+  width: 50%;
+  text-align: right;
+}
+main .weather {
+  opacity: 0;
+  margin: 0 auto;
+  display: inline-block;
+  -webkit-animation: fadeIn 1s ease forwards;
+  animation: fadeIn 1s ease forwards;
+}
+main .weather .icon {
+  margin: -8% -10px -8% -5px;
+  width: 11em;
+  height: 11em;
+  float: left;
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  opacity: 0.8;
+}
+main .weather .icon.icon-395 {
+  background-image: url('../img/icons/weather_icons-68.svg');
+}
+main .weather .icon.icon-392 {
+  background-image: url('../img/icons/weather_icons-31.svg');
+}
+main .weather .icon.icon-389 {
+  background-image: url('../img/icons/weather_icons-28.svg');
+}
+main .weather .icon.icon-386 {
+  background-image: url('../img/icons/weather_icons-29.svg');
+}
+main .weather .icon.icon-377 {
+  background-image: url('../img/icons/weather_icons-54.svg');
+}
+main .weather .icon.icon-374 {
+  background-image: url('../img/icons/weather_icons-51.svg');
+}
+main .weather .icon.icon-371 {
+  background-image: url('../img/icons/weather_icons-68.svg');
+}
+main .weather .icon.icon-368 {
+  background-image: url('../img/icons/weather_icons-31.svg');
+}
+main .weather .icon.icon-365 {
+  background-image: url('../img/icons/weather_icons-54.svg');
+}
+main .weather .icon.icon-362 {
+  background-image: url('../img/icons/weather_icons-54.svg');
+}
+main .weather .icon.icon-359 {
+  background-image: url('../img/icons/weather_icons-36.svg');
+}
+main .weather .icon.icon-356 {
+  background-image: url('../img/icons/weather_icons-36.svg');
+}
+main .weather .icon.icon-353 {
+  background-image: url('../img/icons/weather_icons-19.svg');
+}
+main .weather .icon.icon-350 {
+  background-image: url('../img/icons/weather_icons-51.svg');
+}
+main .weather .icon.icon-338 {
+  background-image: url('../img/icons/weather_icons-68.svg');
+}
+main .weather .icon.icon-335 {
+  background-image: url('../img/icons/weather_icons-32.svg');
+}
+main .weather .icon.icon-332 {
+  background-image: url('../img/icons/weather_icons-68.svg');
+}
+main .weather .icon.icon-329 {
+  background-image: url('../img/icons/weather_icons-32.svg');
+}
+main .weather .icon.icon-326 {
+  background-image: url('../img/icons/weather_icons-31.svg');
+}
+main .weather .icon.icon-323 {
+  background-image: url('../img/icons/weather_icons-32.svg');
+}
+main .weather .icon.icon-320 {
+  background-image: url('../img/icons/weather_icons-54.svg');
+}
+main .weather .icon.icon-317 {
+  background-image: url('../img/icons/weather_icons-22.svg');
+}
+main .weather .icon.icon-314 {
+  background-image: url('../img/icons/weather_icons-22.svg');
+}
+main .weather .icon.icon-311 {
+  background-image: url('../img/icons/weather_icons-22.svg');
+}
+main .weather .icon.icon-308 {
+  background-image: url('../img/icons/weather_icons-36.svg');
+}
+main .weather .icon.icon-305 {
+  background-image: url('../img/icons/weather_icons-37.svg');
+}
+main .weather .icon.icon-302 {
+  background-image: url('../img/icons/weather_icons-36.svg');
+}
+main .weather .icon.icon-299 {
+  background-image: url('../img/icons/weather_icons-37.svg');
+}
+main .weather .icon.icon-296 {
+  background-image: url('../img/icons/weather_icons-19.svg');
+}
+main .weather .icon.icon-293 {
+  background-image: url('../img/icons/weather_icons-20.svg');
+}
+main .weather .icon.icon-284 {
+  background-image: url('../img/icons/weather_icons-68.svg');
+}
+main .weather .icon.icon-281 {
+  background-image: url('../img/icons/weather_icons-68.svg');
+}
+main .weather .icon.icon-266 {
+  background-image: url('../img/icons/weather_icons-31.svg');
+}
+main .weather .icon.icon-263 {
+  background-image: url('../img/icons/weather_icons-31.svg');
+}
+main .weather .icon.icon-260 {
+  background-image: url('../img/icons/weather_icons-39.svg');
+}
+main .weather .icon.icon-248 {
+  background-image: url('../img/icons/weather_icons-39.svg');
+}
+main .weather .icon.icon-230 {
+  background-image: url('../img/icons/weather_icons-57.svg');
+}
+main .weather .icon.icon-227 {
+  background-image: url('../img/icons/weather_icons-57.svg');
+}
+main .weather .icon.icon-200 {
+  background-image: url('../img/icons/weather_icons-29.svg');
+}
+main .weather .icon.icon-185 {
+  background-image: url('../img/icons/weather_icons-23.svg');
+}
+main .weather .icon.icon-182 {
+  background-image: url('../img/icons/weather_icons-23.svg');
+}
+main .weather .icon.icon-179 {
+  background-image: url('../img/icons/weather_icons-32.svg');
+}
+main .weather .icon.icon-176 {
+  background-image: url('../img/icons/weather_icons-20.svg');
+}
+main .weather .icon.icon-143 {
+  background-image: url('../img/icons/weather_icons-40.svg');
+}
+main .weather .icon.icon-122 {
+  background-image: url('../img/icons/weather_icons-16.svg');
+}
+main .weather .icon.icon-119 {
+  background-image: url('../img/icons/weather_icons-16.svg');
+}
+main .weather .icon.icon-116 {
+  background-image: url('../img/icons/weather_icons-17.svg');
+}
+main .weather .icon.icon-113 {
+  background-image: url('../img/icons/weather_icons-01.svg');
+}
+main .weather .condition {
+  float: right;
+  margin: 0 20px 0 0;
+}
+main .weather .condition label {
+  color: #3598dc;
+  clear: both;
+  display: block;
+  line-height: 2em;
+  font-weight: 400;
+  font-size: 15px;
+  margin: 0;
+}
+main .weather .condition label:before {
+  content: "";
+  display: block;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('../img/icons/weather_icons-64.svg');
+  width: 1.7em;
+  height: 2em;
+  float: left;
+  opacity: 0.8;
+}
+main .weather .condition .temp {
+  font-size: 4em;
+  line-height: 1em;
+  display: block;
+}
+main .weather .condition .temp:after {
+  content: "\2103";
+  font-size: 0.5em;
+  vertical-align: super;
+}
+main .weather .condition .realfeel {
+  float: right;
+}
+main .weather .condition .realfeel:before {
+  content: "RealFeel";
+  font-size: 0.8em;
+  margin: 0 0.3em 0 0;
+}
+main .weather .condition .realfeel:after {
+  content: "\2103";
+  font-size: 0.5em;
+  vertical-align: super;
+}
+main .weather .status {
+  color: #3598dc;
+  border-bottom: 1px #3598dc;
+  border-bottom-style: double;
+  clear: both;
+  padding: 0.5em 0 1em;
+  font-size: 1.5em;
+  margin: 0 0 1em;
+}
+main .weather .hourly {
+  list-style: none;
+  padding: 0;
+}
+main .weather .hourly li {
+  float: left;
+  width: 25%;
+}
+main .weather .hourly li .time {
+  color: #3598dc;
+  font-size: 16px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+main .weather .hourly li .icon {
+  float: none;
+  width: 100%;
+  height: 4em;
+  margin: -8% 0;
+}
+main .weather .hourly li .temp {
+  font-size: 15px;
+  font-weight: 600;
+  margin: 0.4em 0;
+  display: block;
+  opacity: 0.7;
+}
+main .weather .hourly li .temp:after {
+  content: "\2103";
+  font-size: 0.5em;
+  vertical-align: super;
+}
+main .city-picker {
+  text-align: left;
+  margin: 0 auto;
+  float: none;
+}
+main .city-picker .history {
+  margin: 2em 0 0;
+}
+main .city-picker .history ul {
+  list-style: none;
+  padding: 0;
+}
+main .city-picker .history ul li {
+  height: 35px;
+  line-height: 35px;
+  font-size: 16px;
+}
+/*=====================================
+=            Media queries            =
+=====================================*/
+
+/* Smartphones (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 480px) {
+  main .header .time {
+    position: initial;
+    text-align: right;
+  }
+  main .weather {
+    float: none;
+    margin: 40px 0 0;
+  }
+}
+/* Smartphones (landscape) ----------- */
+
+@media only screen and (min-width: 321px) {
+  main .header .time {
+    position: fixed;
+    text-align: left;
+    bottom: 45px;
+    left: 45px;
+  }
+  main .weather {
+    float: right;
+    margin: 0 5% 0 0;
+  }
+}
+/* Smartphones (portrait) ----------- */
+
+@media only screen and (max-width: 320px) {
+  main .header .time {
+    position: initial;
+    text-align: right;
+  }
+  main .weather {
+    float: none;
+    margin: 40px 0 0;
+  }
+}
+/* iPads (portrait and landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) {
+  main .header .time {
+    position: initial;
+    text-align: right;
+  }
+  main .weather {
+    float: none;
+    margin: 40px 0 0;
+  }
+}
+/* iPads (landscape) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: landscape) {
+  main .header .time {
+    position: initial;
+    text-align: right;
+  }
+  main .weather {
+    float: none;
+    margin: 40px 0 0;
+  }
+}
+/* iPads (portrait) ----------- */
+
+@media only screen and (min-device-width: 768px) and (max-device-width: 1024px) and (orientation: portrait) {
+  main .header .time {
+    position: initial;
+    text-align: right;
+  }
+  main .weather {
+    float: none;
+    margin: 40px 0 0;
+  }
+}
+/* Desktops and laptops ----------- */
+
+@media only screen and (min-width: 1224px) {
+  main .header .time {
+    position: initial;
+    text-align: right;
+  }
+  main .weather {
+    float: none;
+    margin: 40px 0 0;
+  }
+}
+/* Large screens ----------- */
+
+@media only screen and (min-width: 1824px) {
+  main .header .time {
+    position: initial;
+    text-align: right;
+  }
+  main .weather {
+    float: none;
+    margin: 40px 0 0;
+  }
+}
+/* iPhone 5 (portrait &amp; landscape)----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) {
+  main .header .time {
+    position: initial;
+    text-align: right;
+  }
+  main .weather {
+    float: none;
+    margin: 40px 0 0;
+  }
+}
+/* iPhone 5 (landscape)----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: landscape) {
+  main .header .time {
+    position: fixed;
+    text-align: left;
+    bottom: 45px;
+    left: 45px;
+  }
+  main .weather {
+    float: right;
+    margin: 0 5% 0 0;
+  }
+}
+/* iPhone 5 (portrait)----------- */
+
+@media only screen and (min-device-width: 320px) and (max-device-width: 568px) and (orientation: portrait) {
+  main .header .time {
+    position: initial;
+    text-align: right;
+  }
+  main .weather {
+    float: none;
+    margin: 40px 0 0;
+  }
+}
+/* ==========================================================================
+   Animaitons
+   ========================================================================== */
+
+@-webkit-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@-moz-keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}

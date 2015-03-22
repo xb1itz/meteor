@@ -1,0 +1,646 @@
+body, html {
+	height: 100%;
+}
+
+main {
+	
+	* {
+		font-family: 'PT Sans', sans-serif;
+	}
+
+	display: table;
+    height: 100%;
+    min-height: 100%;
+    width: 100%;
+	
+	.container {
+		display: table-cell;
+  		vertical-align: middle;
+  		text-align: center;
+	}
+
+	.header {
+		color: #3598dc;
+		top: 0;
+		position: fixed;
+		height: 2em;
+		width: 100%;
+		margin: 0 -15px;
+		padding: 3em;
+
+		.location {
+			float: left;
+			font-size: 15px;
+			opacity: 0.8;
+			width: 50%;
+
+			a {
+
+				&:hover {
+					text-decoration: none;
+				}
+
+				span {
+					display: block;
+					text-align: left;
+
+					&:last-child {
+						color: #333;
+						font-size: 0.9em;
+					}
+				}
+			} 
+		}
+
+		.time {
+			float: right;
+			font-size: 15px;
+			opacity: 0.8;
+			width: 50%;
+			text-align: right;
+		}
+	}
+	
+	.weather {
+		opacity: 0;
+		margin: 0 auto;
+  		display: inline-block;
+  		-webkit-animation: fadeIn 1s ease forwards;
+        animation: fadeIn 1s ease forwards;
+
+  		.icon {
+  			margin: -8% -10px -8% -5px;
+  			width: 11em;
+  			height: 11em;
+  			float: left;
+  			display: block;
+  			background-repeat: no-repeat;
+  			background-size: cover;
+  			opacity: 0.8;
+
+  			&.icon-395 {
+  				background-image: url('../img/icons/weather_icons-68.svg');
+  			}
+
+  			&.icon-392 {
+  				background-image: url('../img/icons/weather_icons-31.svg');
+  			}
+
+  			&.icon-389 {
+  				background-image: url('../img/icons/weather_icons-28.svg');
+  			}
+
+  			&.icon-386 {
+  				background-image: url('../img/icons/weather_icons-29.svg');
+  			}
+
+  			&.icon-377 {
+  				background-image: url('../img/icons/weather_icons-54.svg');
+  			}
+
+  			&.icon-374 {
+  				background-image: url('../img/icons/weather_icons-51.svg');
+  			}
+
+  			&.icon-371 {
+  				background-image: url('../img/icons/weather_icons-68.svg');
+  			}
+
+  			&.icon-368 {
+  				background-image: url('../img/icons/weather_icons-31.svg');
+  			}
+
+  			&.icon-365 {
+  				background-image: url('../img/icons/weather_icons-54.svg');
+  			}
+
+  			&.icon-362 {
+  				background-image: url('../img/icons/weather_icons-54.svg');
+  			}
+
+  			&.icon-359 {
+  				background-image: url('../img/icons/weather_icons-36.svg');
+  			}
+
+  			&.icon-356 {
+  				background-image: url('../img/icons/weather_icons-36.svg');
+  			}
+
+  			&.icon-353 {
+  				background-image: url('../img/icons/weather_icons-19.svg');
+  			}
+
+  			&.icon-350 {
+  				background-image: url('../img/icons/weather_icons-51.svg');
+  			}
+
+  			&.icon-338 {
+  				background-image: url('../img/icons/weather_icons-68.svg');
+  			}
+
+  			&.icon-335 {
+  				background-image: url('../img/icons/weather_icons-32.svg');
+  			}
+
+  			&.icon-332 {
+  				background-image: url('../img/icons/weather_icons-68.svg');
+  			}
+
+  			&.icon-329 {
+  				background-image: url('../img/icons/weather_icons-32.svg');
+  			}
+
+  			&.icon-326 {
+  				background-image: url('../img/icons/weather_icons-31.svg');
+  			}
+
+  			&.icon-323 {
+  				background-image: url('../img/icons/weather_icons-32.svg');
+  			}
+
+  			&.icon-320 {
+  				background-image: url('../img/icons/weather_icons-54.svg');
+  			}
+
+  			&.icon-317 {
+  				background-image: url('../img/icons/weather_icons-22.svg');
+  			}
+
+  			&.icon-314 {
+  				background-image: url('../img/icons/weather_icons-22.svg');
+  			}
+
+  			&.icon-311 {
+  				background-image: url('../img/icons/weather_icons-22.svg');
+  			}
+
+  			&.icon-308 {
+  				background-image: url('../img/icons/weather_icons-36.svg');
+  			}
+
+  			&.icon-305 {
+  				background-image: url('../img/icons/weather_icons-37.svg');
+  			}
+
+  			&.icon-302 {
+  				background-image: url('../img/icons/weather_icons-36.svg');
+  			}
+
+  			&.icon-299 {
+  				background-image: url('../img/icons/weather_icons-37.svg');
+  			}
+
+  			&.icon-296 {
+  				background-image: url('../img/icons/weather_icons-19.svg');
+  			}
+
+  			&.icon-293 {
+  				background-image: url('../img/icons/weather_icons-20.svg');
+  			}
+
+  			&.icon-284 {
+  				background-image: url('../img/icons/weather_icons-68.svg');
+  			}
+
+  			&.icon-281 {
+  				background-image: url('../img/icons/weather_icons-68.svg');
+  			}
+
+  			&.icon-266 {
+  				background-image: url('../img/icons/weather_icons-31.svg');
+  			}
+
+  			&.icon-263 {
+  				background-image: url('../img/icons/weather_icons-31.svg');
+  			}
+
+  			&.icon-260 {
+  				background-image: url('../img/icons/weather_icons-39.svg');
+  			}
+
+  			&.icon-248 {
+  				background-image: url('../img/icons/weather_icons-39.svg');
+  			}
+
+  			&.icon-230 {
+  				background-image: url('../img/icons/weather_icons-57.svg');
+  			}
+
+  			&.icon-227 {
+  				background-image: url('../img/icons/weather_icons-57.svg');
+  			}
+
+  			&.icon-200 {
+  				background-image: url('../img/icons/weather_icons-29.svg');
+  			}
+
+  			&.icon-185 {
+  				background-image: url('../img/icons/weather_icons-23.svg');
+  			}
+
+  			&.icon-182 {
+  				background-image: url('../img/icons/weather_icons-23.svg');
+  			}
+
+  			&.icon-179 {
+  				background-image: url('../img/icons/weather_icons-32.svg');
+  			}
+
+  			&.icon-176 {
+  				background-image: url('../img/icons/weather_icons-20.svg');
+  			}
+
+  			&.icon-143 {
+  				background-image: url('../img/icons/weather_icons-40.svg');
+  			}
+
+  			&.icon-122 {
+  				background-image: url('../img/icons/weather_icons-16.svg');
+  			}
+
+  			&.icon-119 {
+  				background-image: url('../img/icons/weather_icons-16.svg');
+  			}
+
+  			&.icon-116 {
+  				background-image: url('../img/icons/weather_icons-17.svg');
+  			}
+
+  			&.icon-113 {
+	  			background-image: url('../img/icons/weather_icons-01.svg');
+	  		}
+  		}
+
+		.condition {
+			float: right;
+			margin: 0 20px 0 0;
+			
+			label {
+				color: #3598dc;
+				clear: both;
+				display: block;
+				line-height: 2em;
+				font-weight: 400;
+				font-size: 15px;
+				margin: 0;
+
+				&:before {
+					content: "";
+					display: block;
+					background-repeat: no-repeat;
+					background-size: cover;
+					background-image: url('../img/icons/weather_icons-64.svg');
+					width: 1.7em;
+					height: 2em;
+					float: left;
+					opacity: 0.8;
+				}
+  			}
+
+  			.temp {
+				font-size: 4em;
+				line-height: 1em;
+				display: block;
+
+				&:after {
+					content: "\2103";
+					font-size: 0.5em;
+					vertical-align: super;
+				}
+  			}
+
+  			.realfeel {
+  				float: right;
+
+  				&:before {
+  					content: "RealFeel";
+					font-size: 0.8em;
+					margin: 0 0.3em 0 0;
+  				}
+
+  				&:after {
+					content: "\2103";
+					font-size: 0.5em;
+					vertical-align: super;
+				}
+  			}
+
+		}
+
+		.status {
+			color: #3598dc;
+			border-bottom: 1px #3598dc;
+			border-bottom-style: double;
+			clear: both;
+			padding: 0.5em 0 1em;
+			font-size: 1.5em;
+			margin: 0 0 1em;
+		}
+
+		.hourly {
+			list-style: none;
+			padding: 0;
+
+			li {
+				float: left;
+				width: 25%;
+
+				.time {
+					color: #3598dc;
+					font-size: 16px;
+					font-weight: 600;
+					text-transform: uppercase;
+				}
+
+				.icon {
+					float: none;
+					width: 100%;
+					height: 4em;
+					margin: -8% 0;
+				}
+
+				.temp {
+					font-size: 15px;
+					font-weight: 600;
+					margin: 0.4em 0;
+					display: block;
+					opacity: 0.7;
+
+					&:after {
+						content: "\2103";
+						font-size: 0.5em;
+						vertical-align: super;
+					}
+				}
+
+			}
+		}
+	}
+
+	.city-picker {
+		text-align: left;
+		margin: 0 auto;
+		float: none;
+
+		.history {
+			margin: 2em 0 0;
+
+			ul {
+				list-style: none;
+				padding: 0;
+
+				li {
+					height: 35px;
+					line-height: 35px;
+					font-size: 16px;
+				}
+			}
+		}
+
+	}
+
+}
+
+/*=====================================
+=            Media queries            =
+=====================================*/
+
+/* Smartphones (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 480px) {
+	main {
+		.header {
+			.time {
+				position: initial;
+				text-align: right;
+			}
+		}
+
+	    .weather {
+	        float: none;
+	  		margin: 40px 0 0;
+	    }
+	}
+}
+ 
+/* Smartphones (landscape) ----------- */
+@media only screen
+and (min-width : 321px) {
+
+	main {
+		.header {
+			.time {
+				position: fixed;
+				text-align: left;
+				bottom: 45px;
+				left: 45px;
+			}
+		}
+
+	    .weather {
+	        float: right;
+	  		margin: 0 5% 0 0;
+	    }
+	}
+	   
+}
+ 
+/* Smartphones (portrait) ----------- */
+@media only screen
+and (max-width : 320px) {
+    main {
+		.header {
+			.time {
+				position: initial;
+				text-align: right;
+			}
+		}
+
+	    .weather {
+	        float: none;
+	  		margin: 40px 0 0;
+	    }
+	}
+}
+ 
+/* iPads (portrait and landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px) {
+    main {
+		.header {
+			.time {
+				position: initial;
+				text-align: right;
+			}
+		}
+
+	    .weather {
+	        float: none;
+	  		margin: 40px 0 0;
+	    }
+	}
+}
+ 
+/* iPads (landscape) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : landscape) {
+    main {
+		.header {
+			.time {
+				position: initial;
+				text-align: right;
+			}
+		}
+
+	    .weather {
+	        float: none;
+	  		margin: 40px 0 0;
+	    }
+	}
+}
+ 
+/* iPads (portrait) ----------- */
+@media only screen
+and (min-device-width : 768px)
+and (max-device-width : 1024px)
+and (orientation : portrait) {
+    main {
+		.header {
+			.time {
+				position: initial;
+				text-align: right;
+			}
+		}
+
+	    .weather {
+	        float: none;
+	  		margin: 40px 0 0;
+	    }
+	}
+}
+ 
+/* Desktops and laptops ----------- */
+@media only screen
+and (min-width : 1224px) {
+    main {
+		.header {
+			.time {
+				position: initial;
+				text-align: right;
+			}
+		}
+
+	    .weather {
+	        float: none;
+	  		margin: 40px 0 0;
+	    }
+	}
+}
+ 
+/* Large screens ----------- */
+@media only screen
+and (min-width : 1824px) {
+    main {
+		.header {
+			.time {
+				position: initial;
+				text-align: right;
+			}
+		}
+
+	    .weather {
+	        float: none;
+	  		margin: 40px 0 0;
+	    }
+	}
+}
+ 
+/* iPhone 5 (portrait &amp; landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px) {
+    main {
+		.header {
+			.time {
+				position: initial;
+				text-align: right;
+			}
+		}
+
+	    .weather {
+	        float: none;
+	  		margin: 40px 0 0;
+	    }
+	}
+}
+ 
+/* iPhone 5 (landscape)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : landscape) {
+	
+	main {
+		.header {
+			.time {
+				position: fixed;
+				text-align: left;
+				bottom: 45px;
+				left: 45px;
+			}
+		}
+
+	    .weather {
+	        float: right;
+	  		margin: 0 5% 0 0;
+	    }
+	}
+}
+ 
+ 
+/* iPhone 5 (portrait)----------- */
+@media only screen
+and (min-device-width : 320px)
+and (max-device-width : 568px)
+and (orientation : portrait) {
+    main {
+		.header {
+			.time {
+				position: initial;
+				text-align: right;
+			}
+		}
+
+	    .weather {
+	        float: none;
+	  		margin: 40px 0 0;
+	    }
+	}
+}
+ 
+ 
+
+
+
+/* ==========================================================================
+   Animaitons
+   ========================================================================== */
+
+@-webkit-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@-moz-keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
