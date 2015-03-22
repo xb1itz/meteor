@@ -67,12 +67,16 @@ meteorApp.controller('weather', ['$scope', '$state', 'weatherService', 'location
         }
 
         //Load weather info and populate binding variables
-        weatherService.getWeatherInfo($scope.city).then(function(response) {
+        weatherService.getWeatherInfo($scope.city).then(function (response) {
 
             $scope.condition = response.data.data.current_condition[0];  
             $scope.hourlyWeather = $.map(response.data.data.weather, function (day, index) {
                 return day.hourly;
             });  
 
+        }, function (error) {
+            $state.go('error', {
+                error: error.statusText
+            });
         });
 }]);

@@ -24,7 +24,18 @@ meteorApp.config(['$stateProvider', '$urlRouterProvider',
                 url: "/location",
                 controller: 'location',
                 templateUrl: "views/location.html"
-            })            
+            }) 
+
+            .state('error', {
+                url: "/error",
+                templateUrl: "views/error.html",
+                params: {
+                    error: 'Some kind of error happened'
+                },
+                controller:  ['$scope', '$state', function ($scope, $state) {
+                    $scope.error = $state.params.error;
+                }]
+            })           
 
 
     }]);
