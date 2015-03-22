@@ -1,6 +1,9 @@
 # meteor
 AngularJS demo weather app
 
+### Demo
+http://frontend.lt/meteor
+
 ### Install instructions
 Plug & Play
 
